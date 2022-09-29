@@ -3,12 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" /> 
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  <body class="app">  <img src="../img/fondo.jpg">
+    <header>
+  
+      <div id="title" class="title">
+        <h1>Tarjeta de crédito válida</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+      <div class="inputName">
+        <form>
+        <label>Número de tarjeta:</label>
+          <input type="number" id="cardNumber" autocomplete="off" autofocus size="16" placeholder="4111 1111 1111 1111" min="0" step="1" required title="Ingrese solo números" />
+          
+      
+        </div>
+      <div class="validateCard">
+      <button type="submit" id="validateButton">Validar</button> </form>
+    </div></div>
+  </main>
+
+    <footer>
+    </footer>
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
