@@ -1,18 +1,24 @@
 import validator from './validator.js';
 
-console.log(validator);
-document
-  .getElementById("validateButton")
-  .addEventListener("click", function (event) {
+document.getElementById("creditCardForm").addEventListener("submit", function (event) {
+
     event.preventDefault();
-
-    let cardNumber2=document.getElementById("cardNumber").value;
-   
-    let saludo = validator.isValid(cardNumber);
-    validator.maskify(cardNumber);
     
-    alert("Mensaje de index.js\n\n"+saludo+"  "+cardNumber2);
+    const creditCardNumber=document.getElementById("cardNumberHtml").value
+ 
+    if(validator.isValid(creditCardNumber))
+    {
+      document.getElementById("innerTextOutput").innerText="Tu tarjeta de crédito Nº "+validator.maskify(creditCardNumber)+"\nes válida"; 
 
-     })
+     // alert("Tu tarjeta de crédito Nº "+validator.maskify(creditCardNumber)+" es válida");
+    }
+    else
+    document.getElementById("innerTextOutput").innerText="Tu tarjeta de crédito Nº "+validator.maskify(creditCardNumber)+"\nNO es válida";
+   // alert("Tu tarjeta de crédito Nº "+validator.maskify(creditCardNumber)+" no es válida");
+  })
 
+  
+    
+   
+   
 
