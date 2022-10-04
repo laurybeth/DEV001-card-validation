@@ -1,0 +1,83 @@
+html,
+.body {
+    background: url("/fondo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.creditCard {
+    background-color:#ffffff;
+    margin: 200px 0 0 1100px; /* arriba,derecha, abajo , izquierda */
+    color: #1c1f54;
+    height: 560px;
+    width: 700px;
+    font-size: 15px;
+    text-align: center;
+    font: 100% sans-serif;
+    box-shadow:0px 10px 10px -6px black;
+
+}
+
+.inputCard1 {
+    border: 1px solid #39c;
+    border-radius: 7px;
+    height: 30px;
+    width: 310px;  
+    text-align: center;
+    margin-right: -10px;
+}
+
+.inputCard2 {
+    border: 1px solid #39c;
+    border-radius: 7px;
+    height: 30px;
+    width: 149px;  
+    text-align: center;
+    margin-left: 10px;
+}
+
+:focus{
+	outline: 1px solid rgb(0, 110, 255)
+}
+
+.inputsBox{
+	margin-left: -10px;
+}
+
+.validateButton{
+
+    color:rgb(255, 255, 255);
+    background-color: #2c50e4;
+    border: none;
+    margin: 8px 0px;
+    padding: 16px;
+    width:310px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.validateButton:hover {
+    background-color:#2c43e7;
+    font-size: 20px;
+    font: sans-serif;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+input[type=number] {
+
+    -moz-appearance:textfield;
+
+}
