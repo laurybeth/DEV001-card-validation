@@ -12,21 +12,24 @@
       <div class="creditCard" >
          <br> <h1>PAGO WEB</h1>
          <br><label>Recuerda activar las compras por Internet en tu banco</label> <br> <br><br><br>
-        <div class="inputsBox">
+        
           <form id="creditCardForm" method="POST">
+            <div class="inputsBox">
             <input class="inputCard1" type="number" id="cardNumberHtml" autocomplete="off" size="16"  min="0" step="1" required placeholder="4111 1111 1111 1111" title="Ingrese solo números" />
-          <br><br><input class="inputCard2" type="text" readonly="readonly" placeholder="10/24"/><input class="inputCard2" type="text" readonly="readonly" placeholder="236"/>
-          <br><br><input class="inputCard2" type="text" readonly="readonly" placeholder="SANDRA"/><input class="inputCard2" type="text" readonly="readonly" placeholder="QUISPE"/>
-          <br><br><input class="inputCard1" type="email" readonly="readonly" placeholder="sandraq@hotmail.com"/>
-          <br><br><select class="inputCard1">
-            <option class="inputCard1" readonly="readonly" value="1">1 cuota</option>
-            <option class="inputCard1" readonly="readonly" value="6">6 cuotas</option>
-            <option class="inputCard1" readonly="readonly" value="12">12 cuotas</option>
-            <option class="inputCard1" readonly="readonly" value="24">24 cuotas</option>
-          </select>
-          <br><input type="submit" class="validateButton" value="VALIDAR"/>
-        </form>
-        </div>
+            <br><br><input class="inputCard2" type="text" readonly="readonly" placeholder="10/24"/><input class="inputCard2" type="text" readonly="readonly" placeholder="236"/>
+            <br><br><input class="inputCard2" type="text" readonly="readonly" placeholder="SANDRA"/><input class="inputCard2" type="text" readonly="readonly" placeholder="QUISPE"/>
+            <br><br><input class="inputCard1" type="email" readonly="readonly" placeholder="sandraq@hotmail.com"/>
+            <br><br><select class="inputCard1">
+                    <option class="inputCard1" readonly="readonly" value="1">1 cuota</option>
+                    <option class="inputCard1" readonly="readonly" value="6">6 cuotas</option>
+                    <option class="inputCard1" readonly="readonly" value="12">12 cuotas</option>
+                    <option class="inputCard1" readonly="readonly" value="24">24 cuotas</option>
+                   </select>
+          </div>
+          <br><br><input type="submit" class="validateButton" value="VALIDAR"/>
+        </form>        
+        <p id="innerTextOutput"></p>
+        
     </div>
   </main>
 

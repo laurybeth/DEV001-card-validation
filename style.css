@@ -1,6 +1,6 @@
 html,
 .body {
-    background: url("/fondo.jpg") no-repeat center center fixed;
+    background: url("./fondo.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -12,7 +12,7 @@ html,
     background-color:#ffffff;
     margin: 200px 0 0 1100px; /* arriba,derecha, abajo , izquierda */
     color: #1c1f54;
-    height: 560px;
+    height: 650px;
     width: 700px;
     font-size: 15px;
     text-align: center;
@@ -80,4 +80,10 @@ input[type=number] {
 
     -moz-appearance:textfield;
 
+}
+#innerTextOutput{
+border: none;
+font-size: 20px;
+font: sans-serif;
+color:blue;
 }
