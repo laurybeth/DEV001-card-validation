@@ -15,7 +15,7 @@
         
           <form id="creditCardForm" method="POST">
             <div class="inputsBox">
-            <input class="inputCard1" type="number" id="cardNumberHtml" autocomplete="off" size="16"  min="0" step="1" required placeholder="4111 1111 1111 1111" title="Ingrese solo números" />
+            <input class="inputCard1" type="tel" id="cardNumberHtml" autocomplete="off" digitonly maxlength="16" pattern="^[0-9]+" required placeholder="4111 1111 1111 1111" title="Ingrese solo números" />
             <br><br><input class="inputCard2" type="text" readonly="readonly" placeholder="10/24"/><input class="inputCard2" type="text" readonly="readonly" placeholder="236"/>
             <br><br><input class="inputCard2" type="text" readonly="readonly" placeholder="SANDRA"/><input class="inputCard2" type="text" readonly="readonly" placeholder="QUISPE"/>
             <br><br><input class="inputCard1" type="email" readonly="readonly" placeholder="sandraq@hotmail.com"/>
