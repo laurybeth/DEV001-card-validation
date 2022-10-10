@@ -13,8 +13,8 @@ const validator = {
             d = d * 2;
 
     //para caso en que el valor doblado tenga dos dìgitos
-        nSum += parseInt(d/10, 10); //obtienes las decenas del digito doblado y lo sumas
-        nSum += d%10; //obtienes unidades del digito doblado y lo sumas
+        nSum += parseInt(d/10, 10); //obtienes las DECENAS del digito doblado y lo sumas
+        nSum += d%10; //obtienes UNIDADES del digito doblado y lo sumas
 
         isSecond = !isSecond; //valida cuando estamos en cada segundo digito
     }
@@ -42,7 +42,28 @@ const validator = {
 
       return creditCardNumberHide;
  
+  },
+  
+  creditCardType:function(creditCardNumber){
+
+
+    if (creditCardNumber.startsWith('1800')||creditCardNumber.startsWith('2131'))
+        return "JCB";
+        else if (creditCardNumber.startsWith('2014')||creditCardNumber.startsWith('2149')||creditCardNumber.startsWith('300')||creditCardNumber.startsWith('301')||creditCardNumber.startsWith('302')||creditCardNumber.startsWith('303')||creditCardNumber.startsWith('304')||creditCardNumber.startsWith('305')||creditCardNumber.startsWith('36')||creditCardNumber.startsWith('38'))
+                 return "Diner's Club";
+             else if (creditCardNumber.startsWith('34')||creditCardNumber.startsWith('37'))
+                      return "American Express";
+                 else if (creditCardNumber.startsWith('4'))
+                          return "Visa";
+                      else if (creditCardNumber.startsWith('51')||creditCardNumber.startsWith('52')||creditCardNumber.startsWith('53')||creditCardNumber.startsWith('54')||creditCardNumber.startsWith('55'))
+                               return "Mastercard";
+                            else if (creditCardNumber.startsWith('6011'))
+                                    return "Discover";
+                                  else if(creditCardNumber.startsWith('3'))
+                                          return "JCB";
+                                        else return "";
   }
+
 
 };
 
